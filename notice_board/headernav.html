@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+  a:link, a:visited {
+  background-color: #FDD1D2;
+  color: black;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: white;
+}
+  .dropdownbtn {
+  background-color: #FDD1D2;
+  color: black;
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+.dropdown-content b {
+  color: #303437;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ 
+.dropdown-content b:hover {
+background-color:#FDD1D2
+}
+ 
+.dropdown:hover .dropdown-content {
+  display: block;
+  align-content: center;
+}
+ 
+.dropdown:hover .dropdownbtn {
+  background-color: white;
+}
+ 
+th, td {
+  padding: 10px;
+}
+  </style>
+  <script src="bootstrap-4.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+  <!--header-->
+<div id="nav">
+<table style="background-color: #FBEDE0 ;
+  width: 100%;
+  display: block;
+  transition: top 0.8s;
+  padding: 18px 16px;" >
+<tr>
+<td><h1 style="font-family:'Times New Roman'">Online Notice Board System</h1></td>
+<td>
+<nav>
+<form style="display:block;
+  padding: 10px 150px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow:10px 10px 10px 10px #D0AB99;" action="home.php" method='get'>
+<!--HOME PAGE-->
+<a href="mainpage.php" target="_blank">HOME</a>
+<!--ABOUT PAGE-->
+<a href="about.php"target="_blank">ABOUT</a>
+<!-- PAGE-->
+<div class="dropdown">
+  <button class="dropdownbtn">LOGIN</button>
+  <div class="dropdown-content">
+  <a href="studentlogin.php">STUDENT</a>
+  <a href="adminlogin.php">ADMIN</a>
+  
+  </div>
+</div>
+<!-- PAGE-->
+<div class="dropdown">
+  <button class="dropdownbtn">REGISTER</button>
+  <div class="dropdown-content">
+  <a href="studentregis.php">STUDENT</a>
+  <a href="adminregis.php">ADMIN</a>
+</form>
+</nav>
+</td></tr></table>
+</div>
+</body>
+</html>
